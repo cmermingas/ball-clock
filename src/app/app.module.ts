@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ClockLevelComponent } from './clock-level/clock-level.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClockLevelComponent
   ],
   imports: [
     BrowserModule,

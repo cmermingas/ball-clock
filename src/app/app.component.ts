@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  level1Source = Observable.interval(1000);
+  level2Source = new Subject<any>();
+  level3Source = new Subject<any>();
 }

@@ -1,0 +1,3 @@
+<div *ngFor="let item of marbles; let i = index" class="marble-spot" [class.marble]="item !== null">
+  {{(i + 1) * step}}
+</div>

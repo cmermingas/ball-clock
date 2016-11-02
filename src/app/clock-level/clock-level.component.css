@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.marble-spot {
+  width: 30px;
+  height: 30px;
+  margin-left: 2px;
+  border-radius: 15px;
+  vertical-align: baseline;
+  text-align: center;
+  border: 1px dotted gray;
+}
+
+.marble {
+  border: 1px solid black;
+  background-color: gray;
+  color: yellow;
+}

@@ -1,3 +1,21 @@
 <h1>
-  {{title}}
+  Rolling Ball Clock Simulation
 </h1>
+
+<app-clock-level [minValue]="1"
+                 [maxValue]="4"
+                 [step]="1"
+                 [marbleSource]="level1Source"
+                 (overflow)="level2Source.next(1)"></app-clock-level>
+
+<app-clock-level [minValue]="5"
+                 [maxValue]="55"
+                 [step]="5"
+                 [marbleSource]="level2Source"
+                 (overflow)="level3Source.next(1)"></app-clock-level>
+
+<app-clock-level [minValue]="1"
+                 [maxValue]="11"
+                 [step]="1"
+                 [marbleSource]="level3Source"></app-clock-level>
+
